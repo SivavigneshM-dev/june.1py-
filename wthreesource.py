@@ -23,7 +23,7 @@ print('Tuple : ', tuple)
 
 # Display the first and last colors from the list
 color_list =[ "red", "blue" , "Brown" , "Green" , "Orangre "]
-print("First color: ", color_list[0])
+print("First color: ", color_list [int(input("enter numbers less than 4 : "))])
 
 
 # Exam shedule

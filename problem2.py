@@ -14,3 +14,5 @@ while True:
 
 def assign_name_date_of_birth(name,date_of_birth):
     sum("%y","%d")
+    print()
+    
