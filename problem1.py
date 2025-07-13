@@ -12,7 +12,7 @@ def assign_house(student_name, student_traits):
     for house, traits in house_traits.items():
         match_count = len(student_traits_set & traits)
         match_counts[house] = match_count
-
+        
     max_matches = max(match_counts.values())
     top_houses = [house for house, count in match_counts.items() if count == max_matches]
 
