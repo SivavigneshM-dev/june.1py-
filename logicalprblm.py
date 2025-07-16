@@ -1,4 +1,5 @@
 # Add two numbers 
+print("SUM")
 
 a = int(input("Input the 1st number  :"))
 b = int(input("Input the 2nd number :"))
@@ -7,14 +8,16 @@ sum = a+b
 print(sum)
 
 # multiply 
-
+print("MULTI")
 x = int(input("Input the 1st number  :"))
 y = int(input("Input the 2nd number :"))
 
 multi = x*y
 print(multi)
 
+
 #division 
+print("DIV")
 q = int(input("Input the 1st number  :"))
 r = int(input("Input the 2nd number :"))
 
@@ -23,6 +26,8 @@ print(div)
 
 
 # Swap two numbers
+
+print("SWAP")
 
 numb = input("Enter two separate numbers with a comma: ")
 
@@ -36,15 +41,18 @@ a, b = b, a
 print(a , b)
 
 
-# #print the text with spaced letters
+#print the text with spaced letters
 
+print("SPACE")
 word = input("Enter hello world  ")
 
 words_space = ' '.join(word)
 
 print(words_space)
 
-# #odd numbers 
+#odd numbers
+
+print("ODD or EVEN numbers ")
 
 odd_or_even = int(input("Enter any number"))
 
@@ -53,7 +61,9 @@ if odd_or_even % 2 == 0 :
 else :
     print("Odd Number")
 
+
 #loop
+print("Loop")
 i = 1
 nubr = int(input("Enter any number  : "))
 while i <= nubr:
@@ -61,8 +71,9 @@ while i <= nubr:
     i = i + 1
 
    
-print("Now printing even numbers !!!")
+
 #print even numbers 
+print("Now printing even numbers !!!")
 
 e = 2
 even = int(input("enter any even number  : "))
@@ -71,8 +82,9 @@ while e <= even:
     e = e + 2
 
 
-print("Now printing odd numbers !!!")
 #Odd numbers 
+print("Now printing odd numbers !!!")
+
 o = 1
 odd = int(input("Enter any odd number  :"))
 while o<=odd :
@@ -80,6 +92,8 @@ while o<=odd :
     o += 2
 
 # Calculate product
+
+print("Product ")
 numbers = input("Enter two numbers separated by '/': ")
 
 num1, num2 = map(int, numbers.split('/'))
@@ -90,7 +104,7 @@ print(product)
 
 
 # pattern 
-
+print("Pattern")
 rows = int(input("Enter the Number for the pattern: "))
 for i in range(1, rows + 1):  
     for j in range(rows  - i):  
@@ -190,3 +204,38 @@ if l1 == l2 :
 else:
  print("The list is Not Equal")
 
+#To find positive or Negative 
+think = int(input("Enter positive or negative number  :"))
+if think > 0:
+ print("Positive Number")
+else :
+    print("Negative Number ")
+
+#Array reverse
+avg = input("Enter three numbers separated by commas: ")
+numbr = [int(num.strip()) for num in avg.split(',')]
+
+numbr.sort(reverse=True)
+
+sort_Avg = ', '.join(str(num) for num in numbr)
+
+print(sort_Avg)
+
+#Largest number in a array 
+array1 = input("Enter numbers with space : ")
+arr = array1.split(' ')
+arr = [int(x.strip()) for x in arr]  
+print(max(arr))
+
+
+
+#Smallest number in a array 
+array1 = input("Enter numbers with space : ")
+arr = array1.split(' ')
+arr = [int(x.strip()) for x in arr]  
+print(min(arr))
+
+
+#Reverse string 
+
+string11 = input("") 
