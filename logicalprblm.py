@@ -264,10 +264,8 @@ print("Reversing the String ")
 
 string11 = input("Input some letters with space: ")
 string11 = string11.lower()  
-string2 = string11.split(' ')
-string2.reverse()  
-print(string2)
-
-
+font = string11.split(' ')
+font.reverse()  
+print(font)
 
 
