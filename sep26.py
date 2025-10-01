@@ -32,7 +32,8 @@
 
 # Reverse string
 
-string = "praveen"
-print(string[::-1])
+# string = "praveen"
+# print(string[::-1])
+
 
 
