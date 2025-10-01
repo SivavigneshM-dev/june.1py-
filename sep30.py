@@ -173,3 +173,25 @@ for j in range(1,length+1):
 
 
 """
+# 5. Remove Duplicates while maintaining Order
+num = [1, 4, 5, 6, 7, 4, 5, 6, 2, 3]
+seen = set()
+result = []
+for n in num:
+    if n not in seen:
+        seen.add(n)
+        result.append(n)
+print(result)
+
+
+sorted_result = []
+for n in result:
+    inserted = False
+    for i in range(len(sorted_result)):
+        if n < sorted_result[i]:
+            sorted_result.insert(i, n)
+            inserted = True
+            break
+    if not inserted:
+        sorted_result.append(n)
+print(sorted_result)
