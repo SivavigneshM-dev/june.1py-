@@ -40,22 +40,7 @@ print(total)
 
 
 
-# remove duplicates form array 
 
-my_arr = input("Enter numbers  with space   :").split()
-
-arr = []
-my_tup = ()
-
-result = []
-
-for num in my_arr:
-    arr.append(num)
-    num.join(my_tup)
-    if num not in result:
-        result.append(num)
-print("With Duplicates ",arr)
-print("Without Duplicates ",result)
 
 
 # revers words  in string 
@@ -86,18 +71,73 @@ for l in user_input:
 print(length)
 
 
+
+# Length without using .len()  in For loop
+
+user_input  = input("Enter Text ")
+
+arr = []
+length = 0
+
+while True:
+    arr.append(user_input)
+    length += 1
+    if " " in arr:
+        arr.remove(" ")
+        length -= 1
+    print(length)
+
+
+# Length without using .len()  in while loop
+
+
+text = input("Enter the Text  :")
+length = 0
+spaces = 0
+i = 0
+try:
+    while True:
+        char = text[i]
+        length += 1        
+        if char == " ":    
+            spaces += 1            
+        i += 1
+except IndexError:
+    pass
+
+print(length - spaces)
+
 """
+   
+# remove duplicates form array 
 
-# user_input  = input("Enter Text ")
-
+# my_arr = (input("Number with space ").split()
 # arr = []
-# length = 0
+# my_tup = ()
 
-# while True:
-#     arr.append(user_input)
-#     length += 1
-#     if " " in arr:
-#         arr.remove(" ")
-#         length -= 1
-#     print(length)
+# result = []
+
+# for num in my_arr:
+#     arr.append(num)
+#     num.join(my_tup)
+#     if num not in result:
+#         result.append(num)
+# print("With Duplicates ",arr)
+# print("Without Duplicates ",result)
+
+
+
+my_arr2 = input("Number with space  :")
+arr2 = []
+resultwl =[]
+i = 0 
+while i < len(my_arr2):
+    arr2.append(i)
+    if i not in resultwl:
+        resultwl.append(i)
+        print(resultwl)
+    i += 1
+print(arr2)
+
+
 
